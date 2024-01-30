@@ -1,0 +1,257 @@
+:root{
+  --color: #e02828;
+  --green: #03c734;
+  --black: black;
+  --white: white;
+  --gray: #cecece;
+}
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@font-face {
+  font-family: font1;
+  src: url(./assets/fonts/barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(./assets/fonts/lobster-two/LobsterTwo-Regular.ttf);
+}
+
+.veg-banner {
+    background-image: url('../img/banner-png/8.jpg');
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: 50%;
+    /* padding: 5% 0px; */
+    padding: 7% 0;
+    margin-top: 7%;
+  }
+
+  .veg-banner-over-lay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/contact/contact-image/pattarn.png);
+    background: #000;
+    opacity: 0.7;
+  }
+
+  .veg-banner-content-one {
+    font-family: "font2";
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .veg-banner-content-one h1 {
+    font-size: 50px;
+    font-family: font2;
+    color: var(--white);
+  }
+  
+  .veg-banner-navigation-content ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-family: "font1";
+    justify-content: center;
+    margin-right: 45px;
+  }
+  
+  .veg-banner-navigation-content .veg-banner-active-content {
+    color: rgb(226, 0, 0);
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .veg-banner-navigation-content ul .acitives {
+    color: #d91818;
+  }
+  @media only screen and (max-width: 767.98px) {
+    .veg-banner-content-one {
+      justify-content: space-evenly;
+    }
+    .veg-banner-content-one h1 {
+      padding-top: 25%;
+      font-size: 30px;
+    }
+  }
+
+
+  .ptb-100-70 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.single-menu-classic {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px 30px 15px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column
+}
+
+.single-menu-classic h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+  margin-top: -8px;
+  font-family: font2;
+  color: var(--color);
+}
+
+.single-menu-classic p {
+  font-size: 18px;
+  font-family: font1;
+}
+
+.single-menu-classic .menu-item {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.single-menu-classic .menu-item p {
+  color: #999;
+  font-size: 15px;
+}
+
+.single-menu-classic .price-ln {
+  position: relative;
+  width: 100%;
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.single-menu-classic .price-ln a {
+  color: #363636;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline;
+  background: #fff;
+  z-index: 2;
+}
+
+.single-menu-classic .price-ln a:hover {
+  color: #f16d07;
+}
+
+.single-menu-classic .price-ln::after {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  content: '';
+  z-index: 0;
+  border-bottom: 1px dashed #ccc;
+  height: 2px;
+  width: 100%;
+}
+
+.single-menu-classic .price-ln span {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline;
+  background: #fff;
+  z-index: 2;
+  float: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.single-menu-classic .price-ln p {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: inline;
+  background: #fff;
+  z-index: 2;
+}
+
+.single-menu-classic .price-ln-0 span {
+  background: #000;
+}
+
+.single-menu-classic .price-ln-0 a {
+  background: #000;
+}
+
+.book-table-b {
+  background-image: unset;
+}
+
+.book-table-b .book-from {
+  padding: 0;
+}
+
+.book-table-b .book-from h3 {
+  margin-bottom: 60px;
+}
+
+.book-table-b .book-from::before {
+  display: none;
+}
+
+.about-style {
+  padding-top: 0 !important;
+}
+
+.our-histry-area-about-style {
+  padding-bottom: 100px;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  font-size: 14px;
+}
+
+.book-table-area.book-table-b .default-btn {
+  width: unset;
+  margin: auto;
+}
+
+.validation-danger {
+  color: #ff0000;
+}
+
+.validation-success {
+  color: #28a745;
+}
+
+
+.grid-item img {
+  width: 100%;
+  height: 260px;
+  margin-bottom: 40px;
+}
+
+.menu{
+  margin-top: 50px;
+  border-radius: 0px 10px 0px 10px;
+  padding: 10px;
+  background-color: var(--gray);
+}
+
+.stnd-img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
